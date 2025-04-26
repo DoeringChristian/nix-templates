@@ -119,6 +119,7 @@
             ];
 
             CMAKE_CXX_COMPILER_LAUNCHER = "ccache";
+            NIX_ENFORCE_NO_NATIVE = null;
 
             shellHook = ''
               export FLAKE_ROOT="$PWD"
@@ -128,9 +129,8 @@
               export CXX="${gcc13}/bin/g++"
               export PATH="${gcc13}/bin:$PATH"
 
-              export LD_LIBRARY_PATH="${nvidia-library-path}:$LD_LIBRARY_PATH"
+              export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:${nvidia-library-path}"
               export LD_LIBRARY_PATH="${llvm.lib}/lib:$LD_LIBRARY_PATH"
-
             '';
           };
 
