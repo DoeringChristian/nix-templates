@@ -4,10 +4,10 @@ A collection of Nix flake templates for development environments.
 
 ## Available Templates
 
-| Template | Description |
-|----------|-------------|
+| Template   | Description                               |
+| ---------- | ----------------------------------------- |
 | `mitsuba3` | Build environment for Dr.Jit and Mitsuba3 |
-| `writeup` | LaTeX development environment |
+| `writeup`  | LaTeX development environment             |
 
 ## Usage
 
@@ -44,5 +44,5 @@ direnv allow
 To see all available templates:
 
 ```bash
-nix flake show github:doeringc/nix-templates
+nix flake show github:DoeringChristian/nix-templates
 ```

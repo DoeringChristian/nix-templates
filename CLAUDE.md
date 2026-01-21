@@ -15,7 +15,7 @@ This is a collection of Nix flake templates for development environments. Templa
 
 To use a template in a new project:
 ```bash
-nix flake init -t github:USER/nix-templates#mitsuba3
+nix flake init -t github:DoeringChristian/nix-templates#mitsuba3
 ```
 
 ## Mitsuba3 Template Commands
