@@ -11,6 +11,10 @@
         path = ./writeup;
         description = "LaTeX development environment";
       };
+      typst = {
+        path = ./typst;
+        description = "Typst development environment";
+      };
     };
   };
 }
